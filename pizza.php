@@ -3,17 +3,32 @@
 	class PizzaFactory {
 		
 		public function createPizza($type) { 
-				if ($type == "cheese") {
-					$pizza = new CheesePizza();
-				} elseif ($type == "pepperoni") {
-					$pizza = new PepperoniPizza();
-				} elseif ($type == "calm") {
-					$pizza = new CalmPizza();
-				} elseif ($type == "greek") {
-					$pizza = new GreekPizza();
-				} 
+				
+				switch ( $type ) { 
+						
+					case "cheese":
+						$pizza = new CheesePizza();
+					break;
+					
+					case "pepperoni":
+						$pizza = new PepperoniPizza();
+					break;
+					
+					case "calm":
+						$pizza = new CalmPizza();
+					break;
+					
+					case "greek":
+						$pizza = new GreekPizza();
+					break;
+					
+					default :
+						throw new InvalidArgumentException("Invalid PizzaType Bro !");   
+					break;
+				}
 				return $pizza;
 		}
+		
 	}
 
 class PizzaStore { 
