@@ -2,9 +2,9 @@
 class DuckEmulator {     
 	/**      * @var int $type      */     
 		protected $type;  
-		protected static $DECOY_DUCK = 0;     
+		protected static $DECOY_DUCK = "Decoy duck";     
 		protected static $MALLARD_DUCK = "Mallard duck";     
-		protected static $RUBBER_DUCK = "Decoy duck";     
+		protected static $RUBBER_DUCK = "Rubber duck";     
 		protected static $RED_HEAD_DUCK = "Red head duck";  
 		private $duck_string=NULL;
 		private $quack_string=NULL;
