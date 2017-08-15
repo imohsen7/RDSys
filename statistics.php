@@ -11,8 +11,7 @@ class Statistics {
 		 * 
 		 **/   
 		
-		private $candidate =  0 ;
-		private $res =array();
+		private $candidate =  NULL ;
 		
 		function __construct($candidate) { 
 				$this->candidate = $candidate;
@@ -31,7 +30,7 @@ class Statistics {
 						);
 			
 		}
-
+/****
   
 		 public function printGuessStatistics($candidate, $count) {         
 			 if ($count == 0) {             
@@ -58,7 +57,7 @@ class Statistics {
 						)
 			);     
 		} 
-} 
+} **/
 	/**  * What's the output?  */ 
 	$statistics = new Statistics("bird"); 
 	//$statistics->printGuessStatistics( "bird" , 2); 
